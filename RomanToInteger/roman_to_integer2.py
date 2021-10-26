@@ -7,6 +7,7 @@ def convert_to_int(roman_numeral):
         prev = numeral
         next = numeral_list[index]
 
+        # Check the values associated with the roman numerals
         if roman_dict[prev] < roman_dict[next]:
             num += roman_dict[next] - roman_dict[prev]
         else:
